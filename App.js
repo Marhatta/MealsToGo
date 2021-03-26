@@ -1,14 +1,14 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {RestaurantsScreen} from './src/features/restaurants/screens/restaurants.screen';
+import {ThemeProvider} from 'styled-components/native';
+import {theme} from './src/infrastructure/theme';
 
 const App = () => {
   return (
-    <View>
-      <Text>React native blank canvas</Text>
-    </View>
+    <ThemeProvider theme={theme}>
+      <RestaurantsScreen />
+    </ThemeProvider>
   );
 };
-
-const styles = StyleSheet.create({});
 
 export default App;
